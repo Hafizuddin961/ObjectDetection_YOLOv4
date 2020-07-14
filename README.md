@@ -62,7 +62,7 @@ For this project, I decided to detect 17 classes of food which are:
 17) Watermelon 
 
 ### 2) Data Preparation
-convert annotation from Google's Open Images into YOLO format
+Convert annotation from Google's Open Images into YOLO format
 
 ### 3) Configure the YOLO
 The configuration is crucial to get high accuracy, availability for GPU memory to train, etc.
@@ -89,4 +89,47 @@ This result shown the Mean Average Precision (mAP): 60.42%
 ![](https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/result_5000.JPG)<br>
 This result shown the Mean Average Precision (mAP): 52.73%
 
+# Evaluation using image
+Even though 6000 iteraion shows highest precision, sometime weight on 4000 iteration outperformed some weight when I test it using input custom image. This probably happened because the validation image was not equally distributed since validation on Google's Open Image were limited. Here the result after I test using my own image:
 
+### For 4000 iteration:
+
+<p align="center">
+  <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_4000/test1_4000_thresh0.png" width="426px" height="240px"/>
+  <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_4000/test2_4000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_4000/test3_4000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_4000/test4_4000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_4000/test5_4000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_4000/test6_4000_thresh0.png" width="426px" height="240px"/>
+</p>
+
+### For 5000 iteration:
+
+<p align="center">
+  <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/test1_5000_thresh0.png" width="426px" height="240px"/>
+  <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/test2_5000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/test3_5000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/test4_5000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/test5_5000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/test6_5000_thresh0.png" width="426px" height="240px"/>
+</p>
+
+### For 6000 iteration:
+
+<p align="center">
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000/test3_6000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000/test4_6000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000/test5_6000_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000/test6_6000_thresh0.png" width="426px" height="240px"/>
+</p>
+
+### For 6000+ iteration:
+
+<p align="center">
+  <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test1_6000+_thresh0.png" width="426px" height="240px"/>
+  <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test2_6000+_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test3_6000+_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test4_6000+_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test5_6000+_thresh0.png" width="426px" height="240px"/>
+    <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test6_6000+_thresh0.png" width="426px" height="240px"/>
+</p>
