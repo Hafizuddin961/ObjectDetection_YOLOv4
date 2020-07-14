@@ -134,6 +134,13 @@ Even though 6000 iteraion shows highest precision, sometime weight on 4000 itera
     <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test6_6000+_thresh0.png" width="426px" height="240px"/>
 </p>
 
+# Discussion
+There are few suggestion to increase the accuracy:
+1) Increase the iteration (longer training)
+2) Increase the resolution for the image( unfortunately I try 608 x 608 image size but Google Colab out of GPU memory )
+3) Increase the dataset quality (make a lot variation of dataset since I did not check 1 by 1 the downloaded image since it was tedious work)
+4) Try different hyper-parameter configuration such as subdivision, batches, learning rate, steps, filter, etc.
+
 # Resources
 Darknet Repo: https://github.com/AlexeyAB/darknet <br>
 <br>
@@ -145,7 +152,7 @@ Google's Open Images Dataset toolkit, OIDv4_Toolkit: https://github.com/theAIGuy
 <br>
 Pre-trained weights for the convolutional layers: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137 <br>
 <br>
-My Custom Dataset for 17 classes of food: https://drive.google.com/drive/folders/1LWfEuwLMZAyWFpT9JmR5E0myk1n8ESaK?usp=sharing
+My custom dataset and configuration for 17 classes of food: https://drive.google.com/drive/folders/1LWfEuwLMZAyWFpT9JmR5E0myk1n8ESaK?usp=sharing
 
 # References
 Forked from: https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial <br>
