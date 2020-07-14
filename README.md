@@ -133,3 +133,20 @@ Even though 6000 iteraion shows highest precision, sometime weight on 4000 itera
     <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test5_6000+_thresh0.png" width="426px" height="240px"/>
     <img src="https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_6000+/test6_6000+_thresh0.png" width="426px" height="240px"/>
 </p>
+
+# Resources
+Darknet Repo: https://github.com/AlexeyAB/darknet <br>
+<br>
+Trained YOLOv4 weights using COCO dataset: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights <br>
+<br>
+Google's Open Images Dataset: https://storage.googleapis.com/openimages/web/index.html <br>
+<br>
+Google's Open Images Dataset toolkit, OIDv4_Toolkit: https://github.com/theAIGuysCode/OIDv4_ToolKit <br>
+<br>
+Pre-trained weights for the convolutional layers: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137 <br>
+<br>
+My Custom Dataset for 17 classes of food: https://drive.google.com/drive/folders/1LWfEuwLMZAyWFpT9JmR5E0myk1n8ESaK?usp=sharing
+
+# References
+Forked from: https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial <br>
+Dataset preparation: https://www.youtube.com/watch?v=EGQyDla8JNU
