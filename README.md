@@ -32,4 +32,61 @@ For the MS COCO experiments the hyper parameters were as follows:
 * These learning steps were multiplied by a factor of 0.1 at 400k steps and 450k steps respectively.
 * Momentum and weight decay of 0.9 and 0.005 respectively.
 
+# Result on Detection using COCO trained dataset
+
+![](https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_coco/test2.png)
+![](https://github.com/Hafizuddin961/Object-detection-YOLOv3/blob/master/result/melaka_medal.png)
+![](https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_coco/result.gif)
+
+# My Custom Object Detection
+There are a few step to prepare data and configuration before can be trained using YOLOv4. Here are summarize for the step:
+### 1) Data Collection 
+I using Google's Open Images Dataset to collect the data since they already been labeled and segmented but only limited classes only https://storage.googleapis.com/openimages/web/index.html.<br>
+For this project, I decided to detect 17 classes of food which are:
+1) Apple 
+2) Banana 
+3) Bread 
+4) Broccoli 
+5) Burrito 
+6) Cake 
+7) Candy 
+8) Coffee 
+9) Doughnut 
+10) Ice cream 
+11) Muffin 
+12) Pizza 
+13) Potato
+14) Tomato
+15) Vegetable
+16) Waffle 
+17) Watermelon 
+
+### 2) Data Preparation
+convert annotation from Google's Open Images into YOLO format
+
+### 3) Configure the YOLO
+The configuration is crucial to get high accuracy, availability for GPU memory to train, etc.
+
+### 4) Train custom data set
+The training time depend on number of iteration, image size, number of image, etc. For this project, it takes about 12 hour to get until 6000+ iteration
+
+# Evaluation of training data
+Each 1000 iteration was evaluate to see the performance of the model. The result as follow:
+
+### For 4000 iteration
+![](https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_4000/result_4000.JPG)<br>
+This result shown the Mean Average Precision (mAP): 53%
+
+### For 5000 iteration
+![](https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/result_5000.JPG)<br>
+This result shown the Mean Average Precision (mAP): 58.76%
+
+### For 6000 iteration
+![](https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/result_5000.JPG)<br>
+This result shown the Mean Average Precision (mAP): 60.42%
+
+### For 6000+ iteration
+![](https://github.com/Hafizuddin961/ObjectDetection_YOLOv4/blob/master/test_image/iteration_5000/result_5000.JPG)<br>
+This result shown the Mean Average Precision (mAP): 52.73%
+
 
