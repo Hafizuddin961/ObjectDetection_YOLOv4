@@ -1,0 +1,17 @@
+Apple
+Banana
+Bread
+Broccoli
+Burrito
+Cake
+Candy
+Coffee
+Doughnut
+Ice cream
+Muffin
+Pizza
+Potato
+Tomato
+Vegetable
+Waffle
+Watermelon
